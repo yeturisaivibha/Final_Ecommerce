@@ -13,7 +13,7 @@
 
 			<div class="container">
 				<div class="col-md-4 col-sm-12">
-					<img class="img-responsive center-block" src="<c:url value="/resources/img/${selectedProduct.id}.jpg" />" alt="${selectedProduct.name}" />
+					<img class="img-responsive center-block" src="<c:url value="/resources/img/${selectedProduct.id}.jpeg" />" alt="${selectedProduct.name}" />
 				</div>
 				<div class="col-md-5 col-xs-7">
 					<div class="h2">${selectedProduct.name}</div>

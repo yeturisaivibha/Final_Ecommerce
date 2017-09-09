@@ -11,13 +11,14 @@
 
 body
 {
-    background-image: url("resources/images/Register-Button.jpg");
+    background-image: url("resources/images/images.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 </style>
 </head>
+<body background="resources/images/images.jpg">
 <body>
 
 	<div class="container">

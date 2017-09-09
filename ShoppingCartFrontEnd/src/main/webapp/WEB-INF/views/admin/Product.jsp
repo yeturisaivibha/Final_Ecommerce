@@ -20,13 +20,13 @@
 
 				<c:choose>
 					<c:when test="${!empty product.id}">
-						<div class="col-sm-6">
-							<form:input path="id" value="" cssClass="form-control" />
+						<div class="col-sm-9">
+							<form:input path="id" value="" disabled="true" readonly="true" cssClass="form-control" />
 						</div>
 					</c:when>
 
 					<c:otherwise>
-						<div class="col-sm-6">
+						<div class="col-sm-9">
 							<form:input path="id" pattern=".{5,20}" required="true" title="id should contains 5 to 20 characters" cssClass="form-control" />
 						</div>
 					</c:otherwise>
@@ -37,7 +37,7 @@
 				<form:label path="name" cssClass="control-label col-sm-3">
 					<spring:message text="Product Name" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:input path="name" required="true" cssClass="form-control" />
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 				<form:label path="price" cssClass="control-label col-sm-3">
 					<spring:message text="Product Price" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:input path="price" required="true" cssClass="form-control" />
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 				<form:label path="quantity" cssClass="control-label col-sm-3">
 					<spring:message text="Product Quantity" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:input path="quantity" required="true" cssClass="form-control" />
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 				<form:label path="description" cssClass="control-label col-sm-3">
 					<spring:message text="Product Description" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:input path="description" required="true" cssClass="form-control" />
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 				<form:label path="category.name" cssClass="control-label col-sm-3">
 					<spring:message text="Product Category" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:select path="category.name" items="${categoryList}" itemValue="name" itemLabel="name" cssClass="form-control" />
 				</div>
 			</div>
@@ -80,7 +80,7 @@
 				<form:label path="supplier.name" cssClass="control-label col-sm-3">
 					<spring:message text="Product Supplier" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:select path="supplier.name" items="${supplierList}" itemValue="name" itemLabel="name" cssClass="form-control" />
 				</div>
 			</div>
@@ -88,17 +88,17 @@
 				<form:label path="image" cssClass="control-label col-sm-3">
 					<spring:message text="Product Image" />
 				</form:label>
-				<div class="col-sm-6">
+				<div class="col-sm-9">
 					<form:input type="file" name="image" path="image" cssClass="form-control" />
 				</div>
 			</div>
 			<div class="form-group">
 				<td colspan="2"><c:if test="${!empty product.name}">
-						<div class="col-sm-offset-3 col-sm-6">
-							<button type="submit" value="<spring:message/>" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update Product</button>
+						<div class="col-sm-offset-3 col-sm-9">
+							<button type="submit" value="<spring:message/>" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update Product</button>
 						</div>
 					</c:if> <c:if test="${empty product.name}">
-						<div class="col-sm-offset-3 col-sm-6">
+						<div class="col-sm-offset-3 col-sm-9">
 							<button type="submit" value="<spring:message/>" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Add Product</button>
 						</div>
 					</c:if>
@@ -127,7 +127,7 @@
 				<c:forEach items="${productList}" var="product">
 					<tr>
 						<td>${product.id}</td>
-						<td><img height="100px" width="50px" src="<c:url value="/resources/img/${product.id}.jpg" />" alt="${product.name}" /></td>
+						<td><img height="50px" width="75px" src="<c:url value="/resources/img/${product.id}.jpeg" />" alt="${product.name}" /></td>
 						<td>${product.description}</td>
 						<td>${product.name}</td>
 						<td>${product.price}</td>

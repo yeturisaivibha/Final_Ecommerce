@@ -29,9 +29,6 @@ import com.niit.shoppingcart.domain.Supplier;
 import com.niit.util.FileUtil;
 import com.niit.util.Util;
 
-
-
-
 @Controller
 public class ProductController {
 
@@ -59,7 +56,7 @@ public class ProductController {
 	HttpSession session;
 
 	// Setting Path to store images
-	private String path = "//Users//Suveen//Documents//java//workspace//SLT//SLTProject//ShoppingCartFrontEnd//src//main//webapp//resources//img";
+	private String path = "\\E:\\NIIT Files\\Workspaces\\Final_Ecommerce\\ShoppingCartFrontEnd\\src\\main\\webapp\\resources\\img";
 	
 	// Add or Update Product
 	@PostMapping("/manage-product-add")
@@ -126,9 +123,11 @@ public class ProductController {
 		log.debug("Starting of the method deleteProduct");
 		try {
 			productDAO.delete(id);
-			model.addAttribute("message", "Successfully deleted");
+			model.addAttribute("successMessage", "Successfully deleted. ");
+			session.setAttribute("successMessage", "Successfully deleted. ");
 		} catch (Exception e) {
-			model.addAttribute("message", e.getMessage());
+			model.addAttribute("errorMessage", e.getMessage());
+			session.setAttribute("errorMessage", e.getMessage());
 			e.printStackTrace();
 		}
 		log.debug("ending of method deleteProduct");
