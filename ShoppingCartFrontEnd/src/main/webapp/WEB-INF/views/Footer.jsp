@@ -13,7 +13,7 @@
 				<p>&copy; 2017 sai vibha</p>
 			</div>
 			<div class="navbar-text noStyle pull-right">
-				<a href="https://www.facebook.com" target="_blank">
+				<a href="https://www.facebook.com/profile.php?id=100009300146178" target="_blank">
 					<i class="fa fa-facebook fa-2x"></i>
 				</a>
 				<a href="https://twitter.com" target="_blank">

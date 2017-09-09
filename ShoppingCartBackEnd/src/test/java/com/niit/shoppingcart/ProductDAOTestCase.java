@@ -41,20 +41,20 @@ public class ProductDAOTestCase {
 	public void createProductTestCase()
 	{
 		
-		product.setId("Moto_003");
-		product.setCategory_id("WOMEN_007");
-		product.setDescription("Brand new Moto G4 32gb white");
-		product.setName("Moto G4");
-		product.setPrice(14455);
-		product.setQuantity(2);
-		product.setSupplier_id("Samsung_02");
+		product.setId("Apple_01");
+		product.setCategory_id("Apple_01");
+		product.setDescription("Apple ipad pro 64GB 10.5inch with Wi-fi only");
+		product.setName("Apple ipad");
+		product.setPrice(49900);
+		product.setQuantity(5);
+		product.setSupplier_id("Apple_01");
 		
 		boolean flag =  productDAO.saveOrUpdate(product);
 
 		assertEquals("createProductTestCase",true,flag);
 		
 	}
-	/*@Test
+	@Test
 	public void updateCategoryTestCase()
 	{
 		product.setId("Moto");
@@ -72,5 +72,5 @@ public class ProductDAOTestCase {
 	{
 		int actualSize = productDAO.list().size();
 		assertEquals(2, actualSize);
-	} */
+	} 
 }

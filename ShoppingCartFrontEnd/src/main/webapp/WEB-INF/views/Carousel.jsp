@@ -29,28 +29,28 @@
 					<div class="carousel-inner">
 						<div class="item active">
 							<a href="showProductByCategory/Philips">
-								<img src="<c:url value="/resources/images/1.jpeg" />" alt="Image 1" style="width:55%;">
+								<img src="<c:url value="/resources/images/1.jpeg" />" alt="Image 1" style="width:15%;">
 							</a>
 
 						</div>
 						<div class="item">
 							<a href="viewProduct/Nilkamal">
-								<img src="<c:url value="/resources/images/3.jpeg" />" alt="Image 2" style="width:50%;">
+								<img src="<c:url value="/resources/images/3.jpeg" />" alt="Image 2" style="width:15%;">
 							</a>
 						</div>
 						<div class="item">
 							<a href="showProductByCategory/Moto">
-								<img src="<c:url value="/resources/images/5.jpeg" />" alt="Image 3" style="width:50%;">
+								<img src="<c:url value="/resources/images/5.jpeg" />" alt="Image 3" style="width:15%;">
 							</a>
 						</div>
 						<div class="item">
 							<a href="showProductByCategory/Topwears">
-								<img src="<c:url value="/resources/images/7.jpeg" />" alt="Image 4" style="width:50%;">
+								<img src="<c:url value="/resources/images/7.jpeg" />" alt="Image 4" style="width:30%;">
 							</a>
 						</div>
 						<div class="item">
 							<a href="showProductByCategory/Xbox">
-								<img src="<c:url value="/resources/images/9.jpeg" />" alt="Image 5" style="width:50%;">
+								<img src="<c:url value="/resources/images/9.jpeg" />" alt="Image 5" style="width:15%;">
 							</a>
 						</div>
 

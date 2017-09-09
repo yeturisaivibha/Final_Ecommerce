@@ -58,11 +58,11 @@ public class CategoryDAOTestCase {
 
 		assertEquals("updateCategoryTestCase", true, flag);
 
-	}
+	}*/
 
-	/*@Test
+	@Test
 	public void deleteCategoryTestCase() {
-		category.setName("APPLIANCES");
+		category.setName("WOMEN");
 		boolean flag = categoryDAO.delete(category.getName());
 
 		assertEquals("deleteCategoryTestCase", true, flag);
@@ -73,6 +73,6 @@ public class CategoryDAOTestCase {
 	public void listAllCategoryTestCase() {
 		int actualSize = categoryDAO.list().size();
 		assertEquals(7, actualSize);
-	}*/
+	}
 
 }
